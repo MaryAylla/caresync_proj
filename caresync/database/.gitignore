@@ -1,0 +1,14 @@
+# Dependências pesadas 
+/vendor
+/node_modules
+
+# Arquivos de configuração sensíveis 
+.env
+.env.backup
+.env.production
+
+# Arquivos gerados pelo sistema e caches
+/public/hot
+/public/storage
+/storage/*.key
+/storage/debugbar

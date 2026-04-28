@@ -1,0 +1,181 @@
+:root {
+    --care-bg: #f9f6ff;
+    --care-primary: #9575cd;
+    --care-secondary: #d1c4e9;
+    --care-dark: #311b92;
+    --care-text: #4a4a4a;
+    --care-card-bg: #ffffff;
+    --care-accent-green: #a7ffeb;
+    --care-accent-pink: #f8bbd0;
+    --care-banner-lavender: #e6e0f3;
+    --care-banner-soft-pink: #f9f0f6;
+}
+
+
+body {
+    background-color: var(--care-bg);
+
+    background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30 20v20m-10-10h20' stroke='%239575cd' stroke-width='2' fill='none' fill-rule='evenodd' stroke-linecap='round' opacity='0.06'/%3E%3C/svg%3E");
+    background-repeat: repeat;
+    background-attachment: fixed;
+
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    color: var(--care-text);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    flex: 1;
+}
+
+.navbar {
+    background: linear-gradient(135deg, var(--care-dark) 0%, var(--care-primary) 100%) !important;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, .15);
+}
+
+.navbar .nav-link,
+.navbar .navbar-brand {
+    color: #ffffff !important;
+    font-weight: 500;
+}
+
+.navbar .nav-link:hover {
+    color: var(--care-secondary) !important;
+}
+
+.care-hero-banner {
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    margin-right: calc(-50vw + 50%);
+
+    background: linear-gradient(135deg, rgba(230, 224, 243, 0.85) 0%, rgba(249, 240, 246, 0.85) 100%),
+        url('../img/banner-medica-remedios.png');
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    padding: 4rem 0;
+    margin-top: -1.5rem;
+    margin-bottom: 3rem;
+    border-bottom: 3px solid var(--care-primary);
+}
+
+.care-hero-text {
+    text-shadow: 2px 2px 8px rgba(255, 255, 255, 0.9),
+        -2px -2px 8px rgba(255, 255, 255, 0.9);
+}
+
+.card-care {
+    border: none;
+    background-color: var(--care-card-bg);
+    border-radius: 1rem;
+    box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card-care:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 .8rem 2rem rgba(0, 0, 0, .1);
+}
+
+.card-care-highlight {
+    border-top: .4rem solid transparent;
+    border-image: linear-gradient(to right, var(--care-secondary) 0%, var(--care-primary) 100%);
+    border-image-slice: 1;
+}
+
+.btn-care-primary {
+    background-color: var(--care-primary);
+    border: none;
+    color: white;
+    font-weight: bold;
+    border-radius: .5rem;
+    transition: background 0.2s;
+}
+
+.btn-care-primary:hover {
+    background-color: var(--care-dark);
+    color: white;
+}
+
+.btn-care-secondary {
+    background-color: var(--care-secondary);
+    border: none;
+    color: var(--care-dark);
+    font-weight: bold;
+    border-radius: .5rem;
+}
+
+.img-fofa-card {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: contain;
+}
+
+.section-jornada-title {
+    color: var(--care-dark);
+    font-weight: 700;
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.icon-jornada {
+    color: var(--care-primary);
+    font-size: 1.5rem;
+    margin-right: 1rem;
+}
+
+.chart-adesao {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: conic-gradient(var(--care-accent-green) 0% 95%,
+            var(--care-accent-pink) 95% 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    box-shadow: 0 .4rem 1rem rgba(0, 0, 0, .1);
+}
+
+.chart-adesao-inner {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--care-dark);
+}
+
+.btn-primary,
+.bg-primary {
+    background-color: var(--care-primary) !important;
+    border-color: var(--care-primary) !important;
+}
+
+.btn-outline-primary {
+    color: var(--care-primary) !important;
+    border-color: var(--care-primary) !important;
+}
+
+.btn-outline-primary:hover {
+    background-color: var(--care-primary) !important;
+    color: #ffffff !important;
+}
+
+.text-primary {
+    color: var(--care-primary) !important;
+}
+
+.btn-care-secondary {
+    background-color: var(--care-secondary);
+    color: var(--care-dark);
+}
